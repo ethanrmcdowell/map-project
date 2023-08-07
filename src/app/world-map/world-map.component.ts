@@ -11,7 +11,6 @@ export class WorldMapComponent {
   onMouseOver(event: MouseEvent): void {
     if (event.target instanceof SVGPathElement) {
       const countryClass = event.target.getAttribute('class');
-      console.log('Country Class:', countryClass);
       this.countryName = countryClass || null;
     } else {
       this.countryName = null;
@@ -26,5 +25,11 @@ export class WorldMapComponent {
         tooltipSpan.style.left = event.clientX + 'px';
       }
     }
+  }
+
+  onMapClick(event: MouseEvent): void {
+    const clickedElement = event.target as HTMLElement;
+    const elementTitle = clickedElement.getAttribute('title');
+    console.log("clicked element:", elementTitle);
   }
 }
