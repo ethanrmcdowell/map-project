@@ -16,6 +16,7 @@
             "outputPath": "dist/map-project",
             "index": "src/index.html",
             "main": "src/main.ts",
+            "baseHref": "/map-project/",
             "polyfills": [
               "zone.js"
             ],
@@ -91,11 +92,23 @@
             ],
             "scripts": []
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
   },
   "cli": {
-    "analytics": false
+    "analytics": false,
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   }
 }
