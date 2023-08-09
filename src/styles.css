@@ -3,35 +3,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 path {
-    stroke: white;
-    fill: paleturquoise !important;
+  stroke: white;
+  fill: paleturquoise !important;
 
-    transition: fill .4s ease;
+  transition: fill .4s ease;
 }
 
 path:hover {
-    fill: orange !important;
+  fill: orange !important;
 }
 
 #us-map {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .details-box {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: white;
-    padding: 5px;
-    border: 1px solid black;
-    pointer-events: none;
-    opacity: 0;
-    transition: opacity 0.3s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  padding: 5px;
+  border: 1px solid black;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
 /*
@@ -47,10 +47,10 @@ path:hover {
  * Change opacity to 1 to display all circles
  */
 .circlexx {
-    opacity: 0;
-    fill: #c0c0c0;
-    stroke: #000000;
-    stroke-width: 0.5;
+  opacity: 0;
+  fill: #c0c0c0;
+  stroke: #000000;
+  stroke-width: 0.5;
 }
 
 /*
@@ -59,10 +59,10 @@ path:hover {
   * Change opacity to 1 to display all circles
   */
 .subxx {
-    opacity: 0;
-    fill: #c0c0c0;
-    stroke: #000000;
-    stroke-width: 0.3;
+  opacity: 0;
+  fill: #c0c0c0;
+  stroke: #000000;
+  stroke-width: 0.3;
 }
 
 
@@ -71,10 +71,10 @@ path:hover {
   * (all land, as opposed to water, should belong to this class; in order to modify the coastline for land pieces with no borders on them a special class "coastxx" has been added below)
   */
 .landxx {
-    fill: #c0c0c0;
-    stroke: #ffffff;
-    stroke-width: 0.5;
-    fill-rule: evenodd;
+  fill: #c0c0c0;
+  stroke: #ffffff;
+  stroke-width: 0.5;
+  fill-rule: evenodd;
 }
 
 /*
@@ -82,7 +82,7 @@ path:hover {
   * (all of them should also belong to the class "landxx" - to allow for all land to be modified at once by refining "landxx" style's definition further down)
   */
 .coastxx {
-    stroke-width: 0.2;
+  stroke-width: 0.2;
 }
 
 
@@ -92,8 +92,8 @@ path:hover {
   * Change opacity to 0 to hide all territories
   */
 .antxx {
-    opacity: 0;
-    fill: #c0c0c0;
+  opacity: 0;
+  fill: #c0c0c0;
 }
 
 /*
@@ -102,10 +102,10 @@ path:hover {
   * Change opacity to 1 to display all circles
   */
 .noxx {
-    opacity: 0;
-    fill: #c0c0c0;
-    stroke: #000000;
-    stroke-width: 0.5;
+  opacity: 0;
+  fill: #c0c0c0;
+  stroke: #000000;
+  stroke-width: 0.5;
 }
 
 
@@ -116,11 +116,11 @@ path:hover {
   * Change opacity to 1 to display all territories
   */
 .limitxx {
-    opacity: 1;
-    fill: #c0c0c0;
-    stroke: #ffffff;
-    stroke-width: 0.2;
-    fill-rule: evenodd;
+  opacity: 1;
+  fill: #c0c0c0;
+  stroke: #ffffff;
+  stroke-width: 0.2;
+  fill-rule: evenodd;
 }
 
 /*
@@ -129,10 +129,10 @@ path:hover {
   * Change opacity to 1 to display all circles
   */
 .unxx {
-    opacity: 1;
-    fill: #c0c0c0;
-    stroke: #000000;
-    stroke-width: 0.3;
+  opacity: 1;
+  fill: #c0c0c0;
+  stroke: #000000;
+  stroke-width: 0.3;
 }
 
 
@@ -140,8 +140,8 @@ path:hover {
   * Oceans, seas, and large lakes
   */
 .oceanxx {
-    opacity: 0;
-    fill: #ffffff;
-    stroke: #000000;
-    stroke-width: 0.5;
+  opacity: 0;
+  fill: #ffffff;
+  stroke: #000000;
+  stroke-width: 0.5;
 }
